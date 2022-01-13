@@ -1,9 +1,9 @@
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      initial commit
+      testing 123
     </div>
   );
 }

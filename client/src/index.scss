@@ -1,0 +1,14 @@
+@use './partials/_typography' as *;
+@use  './partials/_color-variables' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Magra', 'sans-serif';
+  color: $global-text;
+  background-color: $global-background;
+}
