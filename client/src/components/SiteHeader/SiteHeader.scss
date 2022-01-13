@@ -1,0 +1,25 @@
+@use '../../partials/_typography' as *;
+@use  '../../partials/_color-variables' as *;
+
+.site-header {
+    background-color: $global-secondary-background;
+    color: white;
+    font-family: 'Maitree';
+    font-weight: 300;
+    height: 3.875rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 0.8125rem;
+
+    &__section-container {
+        display: flex;
+        width: 18rem; //this should allow enough space to add the icons, but not have everything space out all weird as the page grows in width before hitting tablet breakpoint
+    }
+
+    &__text-section {
+        display: flex;
+        justify-content: space-between;
+        width: 11rem;
+    }
+}
