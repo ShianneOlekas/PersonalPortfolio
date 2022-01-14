@@ -1,5 +1,6 @@
 @use '../../partials/_typography' as *;
 @use  '../../partials/_color-variables' as *;
+@use '../../partials/_breakpoints' as *;
 
 .site-header {
     background-color: $global-secondary-background;
