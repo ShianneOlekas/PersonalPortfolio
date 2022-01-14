@@ -1,0 +1,27 @@
+@use '../../partials/_typography' as *;
+
+.welcome {
+    margin-top: 2rem;
+
+    &__shianne {
+        font-family: 'Maitree';
+        font-weight: bold;
+        font-size: 67px;
+        width: 309px;
+        line-height: 0.84;
+        background: linear-gradient(
+            to right, 
+            #ffffff, 
+            #de24cb, 
+            #1dd9e5 50%, 
+            #00ff85);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__paragraph {
+        line-height: 20px;
+        width: 281px;
+        margin-top: 2rem;
+    }
+}
