@@ -2,26 +2,30 @@
 
 .welcome {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    &__text-container {
+        margin-left: 5%;
+    }
 
     &__shianne {
-        font-family: 'Maitree';
-        font-weight: bold;
-        font-size: 67px;
-        width: 309px;
-        line-height: 0.84;
-        background: linear-gradient(
-            to right, 
-            #ffffff, 
-            #de24cb, 
-            #1dd9e5 50%, 
-            #00ff85);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        width: 90%;
+        max-width: 350px;
     }
 
     &__paragraph {
         line-height: 20px;
         width: 281px;
-        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+
+    &__icon {
+        padding-top: 5rem;
+        width: 90%;
+        max-width: 450px;
+        margin: auto;
     }
 }
