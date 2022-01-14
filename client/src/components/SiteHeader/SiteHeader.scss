@@ -12,11 +12,29 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    transition: all 1s;
+
+    @include tablet {
+        height: 5.5rem;
+        padding: 0 3rem;
+    }
+
+    @include desktop {
+        padding: 0 7rem;
+    }
 
     &__text-section {
         display: flex;
         justify-content: space-between;
         width: 50%;
+
+        @include tablet {
+            width: 40%;
+        }
+
+        @include desktop {
+            width: 30%;
+        }
     }
 
     &__link {
@@ -26,6 +44,11 @@
         &:hover {
             border-bottom: 2px solid white;
         }
+
+        @include tablet {
+            font-size: 1.2rem;
+            height: 2rem;
+        }
     }
 
     &__icon-section {
@@ -34,6 +57,10 @@
 
     &__icon {
         width: 2rem;
+
+        @include tablet {
+            width: 2.75rem;
+        }
 
         &:hover {
             transform: scale(1.1);
