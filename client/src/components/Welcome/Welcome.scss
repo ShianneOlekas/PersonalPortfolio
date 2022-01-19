@@ -10,7 +10,8 @@
     @include tablet {
         flex-direction: row;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin-left: 2%;
     }
 
     &__text-container {
@@ -18,6 +19,7 @@
 
         @include tablet {
             width: 60%;
+            max-width: 500px;
         }
     }
 
@@ -50,8 +52,9 @@
 
         @include tablet {
             padding: 0;
-            margin: 0 auto;
-            width: 30%;
+            margin: 0 8%;
+            width: 37%;
+            max-width: 349px;
         }
     }
 }
