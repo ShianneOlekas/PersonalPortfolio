@@ -40,9 +40,11 @@
     &__link {
         height: 1.7rem;
         margin-right: 0.725rem;
+        transition: border-width 0.2s linear;
 
         &:hover {
             border-bottom: 2px solid white;
+            border-width: 4px;
         }
 
         @include tablet {
