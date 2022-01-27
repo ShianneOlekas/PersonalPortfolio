@@ -1,38 +1,86 @@
 import './About.scss'
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import styled from 'styled-components'
+import { keyframes } from 'styled-components';
+import { Controller, Scene } from 'react-scrollmagic'
+
 
 function About() {
-    const aboutRef = useRef(); // what should initial value here be? 
+    //** ATTEMPT 3 */
+    const aboutAnimation = keyframes`
+        0% {color: #bc5292;
+        text-shadow: none;}
+    
+        90% {color: #bc5292;
+            text-shadow: none;}
+    
+        100% {color:  #bfbfbf;
+            text-shadow: 0 0 7px #ebbcd8, -10px 0 50px #bc5292;}
+    `
 
-    useEffect(() => {
-
-    });
-
-    // should probably use window.addEventListener here???
-    // where would we call the function ? useEffect ? 
-    // calculate the proper scroll location depending on window height (innerHeight vs outerHeight?? )
-    const aboutScrollHandler = () => {
-        const currentScroll = window.scrollY;
-        const aboutTitleLocation = aboutRef.current
-
-        if(aboutTitleLocation) {
-            aboutTitleLocation.className.add(`about__letters--trigger-animation`)
-        }
+    const ClassToggleStyled = styled.div`
+    .about__letters {
+        list-style: none;
+        font-size: 3.5rem;
+        font-family: 'Maitree';
+        letter-spacing: 0.5rem;
     }
 
+    .trigger-animation {
+        animation: ${aboutAnimation} 1.4s linear;
+        animation-iteration-count: 1;
+    }
+
+    .trigger-animation:nth-child(1) {
+        animation-delay: 0;
+    }
+
+    .trigger-animation:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+    .trigger-animation:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .trigger-animation:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+
+    .trigger-animation:nth-child(5) {
+        animation-delay: 0.4s;
+    }
+
+    .about__letters:nth-child(6) {
+        animation: none;
+        $mission-CTA
+    }
+  `;
+   
 
     return (
-        <section className='about'>
-            <div className="about__title">
-                <ul className="about__list">
-                    <li className='about__letters' ref={aboutRef}>A</li>
-                    <li className='about__letters'>B</li>
-                    <li className='about__letters'>O</li>
-                    <li className='about__letters'>U</li>
-                    <li className='about__letters'>T</li>
-                    <li className='about__letters'>.</li>
-                </ul>
-            </div>
+        <section className='about'>  
+            <ClassToggleStyled className='about__title' id="trigger">
+                <Controller>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"}  triggerHook={0.1} >
+                        <div className='about__letters'>A</div>
+                    </Scene>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                        <div className='about__letters'>B</div>
+                    </Scene>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                        <div className='about__letters'>O</div>
+                    </Scene>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                        <div className='about__letters'>U</div>
+                    </Scene>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                        <div className='about__letters'>T</div>
+                    </Scene>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                        <div className='about__letters'>.</div>
+                    </Scene>
+                </Controller>
+            </ClassToggleStyled>
         </section>
     );
 }
