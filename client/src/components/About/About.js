@@ -61,26 +61,32 @@ function About() {
         <section className='about'>  
             <ClassToggleStyled className='about__title' id="trigger">
                 <Controller>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"}  triggerHook={0.1} >
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"}  triggerHook={0.2}>
                         <div className='about__letters'>A</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>B</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>O</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>U</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>T</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.1}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>.</div>
                     </Scene>
                 </Controller>
             </ClassToggleStyled>
+
+            <div className='about__mission-section'>
+                <div className='about__mission-circle'></div>
+                <h2 className='about__mission-title'>My Mission</h2>
+                <p>To use my love of coding and design to create unique eye-catching websites.</p>
+            </div>
         </section>
     );
 }
