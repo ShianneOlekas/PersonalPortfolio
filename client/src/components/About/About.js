@@ -4,10 +4,7 @@ import styled from 'styled-components'
 import { keyframes } from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic'
 
-
-function About() {
-    //** ATTEMPT 3 */
-    const aboutAnimation = keyframes`
+const aboutAnimation = keyframes`
         0% {color: #bc5292;
         text-shadow: none;}
     
@@ -18,7 +15,7 @@ function About() {
             text-shadow: 0 0 7px #ebbcd8, -10px 0 50px #bc5292;}
     `
 
-    const ClassToggleStyled = styled.div`
+const ClassToggleStyled = styled.div`
     .about__letters {
         list-style: none;
         font-size: 3.5rem;
@@ -55,7 +52,8 @@ function About() {
         $mission-CTA
     }
   `;
-   
+
+function About() {
 
     return (
         <section className='about'>  
