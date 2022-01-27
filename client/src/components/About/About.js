@@ -2,12 +2,15 @@ import './About.scss'
 import { useRef, useEffect } from 'react';
 
 function About() {
-    const aboutRef = useRef();
+    const aboutRef = useRef(); // what should initial value here be? 
 
     useEffect(() => {
 
     });
 
+    // should probably use window.addEventListener here???
+    // where would we call the function ? useEffect ? 
+    // calculate the proper scroll location depending on window height (innerHeight vs outerHeight?? )
     const aboutScrollHandler = () => {
         const currentScroll = window.scrollY;
         const aboutTitleLocation = aboutRef.current
