@@ -1,0 +1,64 @@
+@use '../../partials/_typography' as *;
+@use '../../partials/_breakpoints' as *;
+
+.welcome {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-left: 2%;
+    }
+
+    @include desktop {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    &__text-container {
+        margin-left: 1%;
+
+        @include tablet {
+            width: 60%;
+            max-width: 500px;
+        }
+    }
+
+    &__shianne {
+        width: 90%;
+        max-width: 350px;
+
+        @include tablet {
+            max-width: 500px;
+        }
+    }
+
+    &__paragraph {
+        line-height: 20px;
+        width: 281px;
+        margin-top: 1rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+            width: 80%;
+            line-height: 25px;
+        }
+    }
+
+    &__icon {
+        padding-top: 5rem;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+
+        @include tablet {
+            padding: 0;
+            margin: 0 8%;
+            width: 37%;
+            max-width: 349px;
+        }
+    }
+}

@@ -1,2 +1,13 @@
+@use './partials/_breakpoints' as *;
 
+.App {
+
+    &__body {
+        padding: 0 1rem;
+
+        @include tablet {
+            padding: 0 2rem;
+        }
+    }
+}
 
