@@ -22,7 +22,7 @@
         margin-top: 2rem;
         width: 255px;
         height: 378px;
-        padding: 20px;
+        padding: 45px;
         border-radius: 8px;
         box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background-color: #454444;
@@ -38,5 +38,28 @@
         border-radius: 50%;
         box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background-color: rgba(229, 102, 179, 0.31);
+    }
+
+    &__mission-title {
+        font-family: 'Maitree';
+        font-weight: 500;
+        color: $mission-CTA;
+        font-size: 2rem;
+        width: 50%;
+        line-height: 2.25rem;
+    }
+
+    &__mission-info {
+        margin-top: 1rem;
+        line-height: 2rem;
+        width: 8rem;
+
+        &--cta {
+            color: white;
+        }
+
+        &--cta-two {
+            color: #c293af;
+        }
     }
 }

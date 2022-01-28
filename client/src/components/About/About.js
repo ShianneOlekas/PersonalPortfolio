@@ -21,6 +21,8 @@ const ClassToggleStyled = styled.div`
         font-size: 3.5rem;
         font-family: 'Maitree';
         letter-spacing: 0.5rem;
+        color: white;
+        font-weight: 500;
     }
 
     .trigger-animation {
@@ -49,7 +51,7 @@ const ClassToggleStyled = styled.div`
 
     .about__letters:nth-child(6) {
         animation: none;
-        $mission-CTA
+        color: #bc5292;
     }
   `;
 
@@ -83,7 +85,7 @@ function About() {
             <div className='about__mission-section'>
                 <div className='about__mission-circle'></div>
                 <h2 className='about__mission-title'>My Mission</h2>
-                <p>To use my love of coding and design to create unique eye-catching websites.</p>
+                <p className='about__mission-info'>To use my love of <span className='about__mission-info--cta'>coding</span> and <span className='about__mission-info--cta'>design</span> to create unique <span className='about__mission-info--cta-two'>eye-catching</span> websites.</p>
             </div>
         </section>
     );
