@@ -89,6 +89,7 @@ function About() {
             <div className='about__mission-section'>
                 <div className='about__mission-circle-top'></div>
                 <div className='about__mission-circle-bottom'></div>
+                <div className='about__mission-circle-bottom-two'></div>
                 <h2 className='about__mission-title'>My Mission</h2>
                 <p className='about__mission-info'>To use my love of <span className='about__mission-info--cta'>coding</span> and <span className='about__mission-info--cta'>design</span> to create unique <span className='about__mission-info--cta-two'>eye-catching</span> websites.</p>
             </div>
