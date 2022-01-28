@@ -23,6 +23,10 @@ const ClassToggleStyled = styled.div`
         letter-spacing: 0.5rem;
         color: white;
         font-weight: 500;
+
+        @media (min-width: 46.5rem) {
+            font-size: 6rem;
+        }
     }
 
     .trigger-animation {
@@ -83,7 +87,8 @@ function About() {
             </ClassToggleStyled>
 
             <div className='about__mission-section'>
-                <div className='about__mission-circle'></div>
+                <div className='about__mission-circle-top'></div>
+                <div className='about__mission-circle-bottom'></div>
                 <h2 className='about__mission-title'>My Mission</h2>
                 <p className='about__mission-info'>To use my love of <span className='about__mission-info--cta'>coding</span> and <span className='about__mission-info--cta'>design</span> to create unique <span className='about__mission-info--cta-two'>eye-catching</span> websites.</p>
             </div>

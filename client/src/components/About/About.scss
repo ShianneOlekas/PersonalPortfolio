@@ -1,6 +1,7 @@
 @use '../../partials/_typography' as *;
 @use '../../partials/_animations' as *;
 @use '../../partials/_color-variables' as *;
+@use '../../partials/_breakpoints' as *;
 
 .about {
     margin-top: 10rem;
@@ -8,6 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+        margin-top: 20rem;
+    }    
 
     &__title {
         display: flex;
@@ -27,9 +32,19 @@
         box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background-color: #454444;
         position: relative;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 0;
+            width: 80%;
+            height: 300px;
+        }
     }
 
-    &__mission-circle {
+    &__mission-circle-top {
         position: absolute;
         top: -1.75rem;
         right: -1.75rem;
@@ -38,6 +53,24 @@
         border-radius: 50%;
         box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background-color: rgba(229, 102, 179, 0.31);
+
+        @include tablet {
+            visibility: hidden;
+        }
+    }
+
+    &__mission-circle-bottom {
+
+        @include tablet {
+            position: absolute;
+            bottom: -2.25rem;
+            left: -2.25rem;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            background-color: rgba(229, 102, 179, 0.31);
+            }
     }
 
     &__mission-title {
