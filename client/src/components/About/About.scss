@@ -1,0 +1,122 @@
+@use '../../partials/_typography' as *;
+@use '../../partials/_animations' as *;
+@use '../../partials/_color-variables' as *;
+@use '../../partials/_breakpoints' as *;
+
+.about {
+    margin-top: 10rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        margin-top: 20rem;
+    }    
+
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__mission-section {
+        margin-top: 2rem;
+        width: 255px;
+        height: 378px;
+        padding: 45px;
+        border-radius: 8px;
+        box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: #454444;
+        position: relative;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3.75rem 0;
+            width: 80%;
+            height: 270px;
+        }
+    }
+
+    &__mission-circle-top {
+        position: absolute;
+        top: -1.75rem;
+        right: -1.75rem;
+        width: 77px;
+        height: 77px;
+        border-radius: 50%;
+        box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(229, 102, 179, 0.31);
+
+        @include tablet {
+            visibility: hidden;
+        }
+    }
+
+    &__mission-circle-bottom {
+
+        @include tablet {
+            position: absolute;
+            bottom: -2.25rem;
+            left: -2.5rem;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            background-color: rgba(229, 102, 179, 0.31);
+            }
+    }
+
+    &__mission-circle-bottom-two {
+
+        @include tablet {
+            position: absolute;
+            bottom: 2.5rem;
+            left: -2.35rem;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            background-color: rgba(229, 102, 179, 0.31);
+            }
+    }
+
+    &__mission-title {
+        font-family: 'Maitree';
+        font-weight: 500;
+        color: $mission-CTA;
+        font-size: 2rem;
+        width: 50%;
+        line-height: 2.25rem;
+
+        @include tablet {
+            font-size: 2.75rem;
+        }
+    }
+
+    &__mission-info {
+        margin-top: 1rem;
+        line-height: 2rem;
+        width: 8rem;
+
+        &--cta {
+            color: white;
+        }
+
+        &--cta-two {
+            color: #c293af;
+        }
+
+        @include tablet {
+            width: 25rem;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+        }
+    }
+}

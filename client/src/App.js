@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <SiteHeader />
-      <body className="App__body">
+      <div className="App__main-page">
         <HomePage />
-      </body>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+@use  './_color-variables' as *;
+
+@keyframes lightning {
+    0% {color: $global-text;
+    text-shadow: none;}
+
+    90% {color: $global-text;
+        text-shadow: none;}
+
+    100% {color: $mission-CTA;
+        text-shadow: 0 0 7px #ebbcd8, -10px 0 50px #bc5292;}
+}
