@@ -1,5 +1,4 @@
 import './About.scss'
-import { useRef, useEffect, useState } from 'react';
 import styled from 'styled-components'
 import { keyframes } from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic'
