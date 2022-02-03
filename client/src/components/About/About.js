@@ -62,24 +62,24 @@ function About() {
 
     return (
         <section className='about'>  
-            <ClassToggleStyled className='about__title' id="trigger">
+            <ClassToggleStyled className='about__title' id="trigger-two">
                 
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"}  triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"}  triggerHook={0.2} indicators="true">
                         <div className='about__letters'>A</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"} triggerHook={0.2}>
                         <div className='about__letters'>B</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"} triggerHook={0.2}>
                         <div className='about__letters'>O</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"} triggerHook={0.2}>
                         <div className='about__letters'>U</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"} triggerHook={0.2}>
                         <div className='about__letters'>T</div>
                     </Scene>
-                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
+                    <Scene classToggle={"trigger-animation"} triggerElement={"#trigger-two"} triggerHook={0.2}>
                         <div className='about__letters'>.</div>
                     </Scene>
               

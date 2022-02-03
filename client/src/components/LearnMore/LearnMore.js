@@ -8,19 +8,19 @@ function LearnMore() {
         
             <Scene
             duration={500}
-            triggerElement="#trigger"
+            triggerElement="#trigger-one"
             indicators='true'
             >
                 {(progress) => (
                     <Tween        
                     to={{
                         left: '0px',
-                        rotation: -360,
+                        rotation: -60,
                     }}
                     totalProgress={progress}
                     paused
                     >
-                    <div className='learn-more' id='trigger'>
+                    <div className='learn-more' id='trigger-one'>
                         <p className='learn-more__text'>Scroll</p>
                         <p className='learn-more__text learn-more__text--cta'>to learn</p>
                         <p className='learn-more__text'>more</p>
