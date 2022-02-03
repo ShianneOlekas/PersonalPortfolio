@@ -5,24 +5,22 @@ import { Tween, Timeline } from 'react-gsap';
 function LearnMore() {
 
     return (
-        <Controller>
+        
             <Scene
             duration={500}
+            triggerElement="#trigger"
+            indicators='true'
             >
                 {(progress) => (
                     <Tween        
-                    staggerFrom={{
-                        left: 700,
+                    to={{
+                        left: '0px',
+                        rotation: -360,
                     }}
-                    staggerTo={{
-                        left: 0,
-                        ease: 'Back.easeOut',
-                    }}
-                    stagger={0.15}
                     totalProgress={progress}
                     paused
                     >
-                    <div className='learn-more'>
+                    <div className='learn-more' id='trigger'>
                         <p className='learn-more__text'>Scroll</p>
                         <p className='learn-more__text learn-more__text--cta'>to learn</p>
                         <p className='learn-more__text'>more</p>
@@ -32,7 +30,7 @@ function LearnMore() {
                 )}
                 
             </Scene>
-        </Controller>
+       
     )
 }
 

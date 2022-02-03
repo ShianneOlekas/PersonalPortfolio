@@ -63,7 +63,7 @@ function About() {
     return (
         <section className='about'>  
             <ClassToggleStyled className='about__title' id="trigger">
-                <Controller>
+                
                     <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"}  triggerHook={0.2}>
                         <div className='about__letters'>A</div>
                     </Scene>
@@ -82,7 +82,7 @@ function About() {
                     <Scene classToggle={"trigger-animation"} triggerElement={"#trigger"} triggerHook={0.2}>
                         <div className='about__letters'>.</div>
                     </Scene>
-                </Controller>
+              
             </ClassToggleStyled>
 
             <div className='about__mission-section'>
